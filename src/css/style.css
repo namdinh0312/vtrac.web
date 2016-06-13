@@ -1,0 +1,55 @@
+
+
+/* Tags–––––––––––––––––––––––––––––––––––––––––––––––––– */
+img {
+    max-width: 100%;
+}
+
+/* Loading–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.loading {
+    background: #1E1E1E url('../img/gears.gif') center center no-repeat;
+}
+
+/* BLazy–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.ratio_small-img {
+    padding-bottom: 32.61%;
+    width: 50%;
+    float: left;
+}
+
+.ratio{
+    padding-bottom:66.64%;
+    background-color: white;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.b-lazy, video{
+    display:inline-block;
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+}
+
+.b-lazy.animate{
+    opacity:0;
+    -ms-transform: scale(3);
+    -moz-transform: scale(3);
+    -webkit-transform: scale(3);
+    transform: scale(3);
+    -ms-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+.b-loaded.animate {
+    opacity:1;
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
